@@ -117,8 +117,6 @@ def prop_time_analysis():
     cbar = fig.colorbar(scs[0], cax=cax)
     cbar.set_label("Sample size of data point")
 
-    # fig.set_label("Proportion of incorrect assumptions in prior steps")
-
     plt.tight_layout()
     plt.show()
 
@@ -198,10 +196,9 @@ def prop_depth_analysis():
     cbar = fig.colorbar(scs[0], cax=cax)
     cbar.set_label("Sample size of data point")
 
-    # fig.set_label("Proportion of incorrect assumptions in prior steps")
-
     plt.tight_layout()
     plt.show()
 
-# prop_time_analysis()
+prop_comparison()
+prop_time_analysis()
 prop_depth_analysis()

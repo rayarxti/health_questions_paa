@@ -4,10 +4,6 @@ from tqdm import tqdm
 FEATURE_LIST = ['class_1', 'class_2', 'class_3']
 
 data = pd.read_csv("./data/paa_annotated.csv", index_col=0)
-data_new = pd.read_csv("./data/paa_biased_annotated_new.csv", index_col=0)
-
-for idx in data_new.index:
-    data.loc[idx] = data_new.loc[idx]
 
 data['class_3'] = data['class_3'] + data['class_4']
 data = data.drop(columns=['class_4'])

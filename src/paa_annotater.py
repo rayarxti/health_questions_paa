@@ -4,7 +4,6 @@ from gpt4_utils import evaluate
 
 if __name__ == "__main__":
     data = pd.read_csv('./data/paa_annotated.csv')
-    # data = data[data['class_2'] == 1]
 
     data['explanation'] = None
     data['class_1'] = None

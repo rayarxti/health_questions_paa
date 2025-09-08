@@ -107,10 +107,3 @@ def evaluate(
     except Exception as e:
         print(f"Try to evaluate output{f"# {output_id_}" if output_id_ is not None else ""}. Error occured: {e}")
         return None, None
-
-# def evaluate(
-#     query,
-#     model=None,
-#     output_id_=None
-# ):
-#     return None, 'incorrect' if len(query) > 40 else 'no incorrect', None
