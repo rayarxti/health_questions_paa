@@ -1,4 +1,4 @@
-question,output_text_OpenBioLLM_70B,output_text_Meditron_70B,output_text_MedAlpaca,output_text_LLaMA3_Instruct,output_text_LLaMA3_70B_Instruct,output_text,query_no,query,question_rank,click_history,explanation,class_1,class_2,class_3,question_t-1,depth,class_1_t-1,class_1_prev_cnt,class_1_prop,class_2_t-1,class_2_prev_cnt,class_2_prop,class_3_t-1,class_3_prev_cnt,class_3_prop
+question,output_text_OpenBioLLM_70B,output_text_Meditron_70B,output_text_MedAlpaca,output_text_LLaMA3_Instruct,output_text_LLaMA3_70B_Instruct,output_text_LLaMA3_1_70B_Instruct,query_no,query,question_rank,click_history,explanation,class_1,class_2,class_3,question_t-1,depth,class_1_t-1,class_1_prev_cnt,class_1_prop,class_2_t-1,class_2_prev_cnt,class_2_prop,class_3_t-1,class_3_prev_cnt,class_3_prop
 Can you take trimethoprim and nitrofurantoin at the same time?,,"
 Nitrofurantoin and trimethoprim are both antibiotics used to treat urinary tract infections (UTIs). They work in different ways to kill the bacteria that cause UTIs.
 Nitrofurantoin is a type of antibiotic called a nitrofuran. It works by stopping the bacteria from being able to make proteins that they need to survive.
