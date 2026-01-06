@@ -1,10 +1,7 @@
 from urllib.parse import quote_plus
-import pyperclip
-import time
 import asyncio
 from playwright.async_api import async_playwright
 import pandas as pd
-from gpt4_utils import evaluate
 import dotenv
 import os
 import tqdm
@@ -22,7 +19,7 @@ CLICK_COUNT_THRESHOLD = 10
 TIMEOUT = 5000 # 5s
 
 
-async def scrape_paa(
+async def scrape_paa_unbiased(
     query,
     query_id_=None,
 ):
@@ -86,10 +83,10 @@ for i in tqdm.trange(len(queries)):
     for k in range(1, 3):
         init_seed = (37 * i * k + 3 * k + 42) % 100000
         random.seed(init_seed)
-        data = asyncio.run(scrape_paa(query=query, query_id_=i))
+        data = asyncio.run(scrape_paa_unbiased(query=query, query_id_=i))
         for key in data:
             res.loc[len(res), :] = [i, query, data[key]['question_rank'], key, data[key]['click_history']]
     if i % 10 == 0:
-        res.to_csv('./data/paa.csv', index=False)
+        res.to_csv('./data/paa_unbiased.csv', index=False)
 
-res.to_csv('./data/paa.csv', index=False)
+res.to_csv('./data/paa_unbiased.csv', index=False)
